@@ -1,0 +1,10 @@
+.{
+    .name = .zimika,
+    .version = "0.1.0",
+    .fingerprint = 0xbdafa6eb00000001,
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .myzig = .{ .path = "../myzig" },
+    },
+    .paths = .{ "build.zig", "build.zig.zon", "src", "docs", "tests", "README.md", "LICENSE" },
+}

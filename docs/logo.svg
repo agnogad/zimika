@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Zimika logo">
+  <rect width="128" height="128" rx="28" fill="#141415"/>
+  <rect x="1" y="1" width="126" height="126" rx="27" fill="none" stroke="#ededed" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="64" cy="64" r="30" fill="none" stroke="#ededed" stroke-width="5"/>
+  <circle cx="64" cy="64" r="9" fill="#d9a441"/>
+  <path d="M64 34v30" stroke="#ededed" stroke-width="5" stroke-linecap="round"/>
+  <path d="M28 22h22a5 5 0 0 1 5 5v5H28a5 5 0 0 1-5-5v-5Z" fill="#d9a441"/>
+</svg>
