@@ -71,7 +71,7 @@ jobs:
 
       - name: Build release binary
         shell: bash
-        run: zig build install ${{ matrix.target_flag }} -Doptimize=ReleaseSafe --prefix zig-out/release --summary all
+        run: zig build install ${{ matrix.target_flag }} -Dcpu=baseline -Doptimize=ReleaseSafe --prefix zig-out/release --summary all
 
       - name: Rename asset
         shell: bash
