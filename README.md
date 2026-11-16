@@ -106,13 +106,13 @@ One command downloads the latest release, installs the binary into
 `~/.local/bin`, and creates a desktop entry and icon:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/agnogad/zimika/main/install.sh | bash
+curl -fsSL https://github.com/agnogad/zimika/releases/latest/download/install.sh | bash
 ```
 
 Set `ZIMIKA_INSTALL_DIR` to install somewhere else. To remove Zimika later:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/agnogad/zimika/main/install.sh | bash -s -- --uninstall
+curl -fsSL https://github.com/agnogad/zimika/releases/latest/download/install.sh | bash -s -- --uninstall
 ```
 
 ## Downloads
