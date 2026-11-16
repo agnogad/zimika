@@ -40,7 +40,7 @@ trap 'rm -f "$TMP"' EXIT
 info "Downloading $BINARY"
 curl -fL --progress-bar "${ZIMIKA_BINARY_URL:-$URL}" -o "$TMP" || die "Download failed"
 [[ -s "$TMP" ]] || die "Downloaded file is empty"
-chmod +x "$TMP"
+chmod 755 "$TMP"
 mv "$TMP" "$BIN_DIR/zimika"
 
 info "Installing desktop entry and icon"
