@@ -28,7 +28,7 @@ jobs:
             binary: zig-out/release/bin/zimika
             target_flag: ""
           - name: macos-x86_64
-            os: macos-13
+            os: macos-15-intel
             asset: zimika-macos-x86_64
             binary: zig-out/release/bin/zimika
             target_flag: -Dtarget=x86_64-macos
