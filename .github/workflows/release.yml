@@ -26,14 +26,17 @@ jobs:
             os: ubuntu-24.04
             asset: zimika-linux-x86_64
             binary: zig-out/release/bin/zimika
+            target_flag: ""
           - name: macos-aarch64
             os: macos-14
-            asset: zimika-macos-aarch64
+            asset: zimika-macos-x86_64
             binary: zig-out/release/bin/zimika
+            target_flag: -Dtarget=x86_64-macos
           - name: windows-x86_64
             os: windows-latest
             asset: zimika-windows-x86_64.exe
             binary: zig-out/release/bin/zimika.exe
+            target_flag: ""
 
     steps:
       - name: Checkout Zimika
@@ -68,7 +71,7 @@ jobs:
 
       - name: Build release binary
         shell: bash
-        run: zig build install -Doptimize=ReleaseSafe --prefix zig-out/release --summary all
+        run: zig build install ${{ matrix.target_flag }} -Doptimize=ReleaseSafe --prefix zig-out/release --summary all
 
       - name: Rename asset
         shell: bash

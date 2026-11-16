@@ -108,7 +108,7 @@ Ready-built binaries are on the
 | Asset | Runner |
 | --- | --- |
 | `zimika-linux-x86_64` | Ubuntu 24.04 |
-| `zimika-macos-aarch64` | macOS (Apple Silicon) |
+| `zimika-macos-x86_64` | macOS (Apple Silicon) |
 | `zimika-windows-x86_64.exe` | Windows |
 
 ## Tests
