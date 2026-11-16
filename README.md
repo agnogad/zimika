@@ -100,6 +100,21 @@ zig build -Dtarget=x86_64-windows --prefix zig-out/windows
 zig build -Dtarget=aarch64-macos  --prefix zig-out/macos
 ```
 
+## Install on Linux
+
+One command downloads the latest release, installs the binary into
+`~/.local/bin`, and creates a desktop entry and icon:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/agnogad/zimika/main/install.sh | bash
+```
+
+Set `ZIMIKA_INSTALL_DIR` to install somewhere else. To remove Zimika later:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/agnogad/zimika/main/install.sh | bash -s -- --uninstall
+```
+
 ## Downloads
 
 Ready-built binaries are on the
