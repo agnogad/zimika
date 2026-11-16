@@ -31,7 +31,7 @@ jobs:
             os: macos-15-intel
             asset: zimika-macos-x86_64
             binary: zig-out/release/bin/zimika
-            target_flag: -Dtarget=x86_64-macos
+            target_flag: ""
           - name: windows-x86_64
             os: windows-latest
             asset: zimika-windows-x86_64.exe
